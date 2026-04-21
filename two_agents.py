@@ -1,6 +1,10 @@
 # two_agents.py
 # This is a basic two-agent environment. Each agent has its own properties.
 
+import anthropic
+from dotenv import load_dotenv
+load_dotenv()  # Load API key from .env file
+
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -79,7 +83,6 @@ AGENT_B = Agent(
 )
 
 import anthropic
-
 client = anthropic.Anthropic()
 
 
