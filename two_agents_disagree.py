@@ -3,6 +3,10 @@
 # The agents have different information and different goals, which creates tension in the conversation.
 # They can also reach a resolution, but it requires compromise and understanding.
 
+import anthropic
+from dotenv import load_dotenv
+load_dotenv()  # Load API key from .env file
+
 from dataclasses import dataclass, field
 from typing import Optional
 
